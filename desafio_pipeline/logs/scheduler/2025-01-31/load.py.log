@@ -1,0 +1,420 @@
+[2025-01-31T14:47:40.534+0000] {processor.py:186} INFO - Started process (PID=2620) to work on /opt/airflow/dags/load.py
+[2025-01-31T14:47:40.535+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/load.py for tasks to queue
+[2025-01-31T14:47:40.536+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:47:40.536+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/load.py
+[2025-01-31T14:47:40.541+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:47:40.538+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load.py", line 4, in <module>
+    with DAG('load_data', default_args=default_args, schedule_interval='@daily', catchup=True) as dag:
+                                       ^^^^^^^^^^^^
+NameError: name 'default_args' is not defined
+[2025-01-31T14:47:40.544+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/load.py
+[2025-01-31T14:47:40.558+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/load.py took 0.028 seconds
+[2025-01-31T14:48:10.620+0000] {processor.py:186} INFO - Started process (PID=2686) to work on /opt/airflow/dags/load.py
+[2025-01-31T14:48:10.621+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/load.py for tasks to queue
+[2025-01-31T14:48:10.622+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:48:10.622+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/load.py
+[2025-01-31T14:48:10.627+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:48:10.624+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load.py", line 4, in <module>
+    with DAG('load_data', default_args=default_args, schedule_interval='@daily', catchup=True) as dag:
+                                       ^^^^^^^^^^^^
+NameError: name 'default_args' is not defined
+[2025-01-31T14:48:10.630+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/load.py
+[2025-01-31T14:48:10.644+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/load.py took 0.028 seconds
+[2025-01-31T14:48:40.696+0000] {processor.py:186} INFO - Started process (PID=2752) to work on /opt/airflow/dags/load.py
+[2025-01-31T14:48:40.697+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/load.py for tasks to queue
+[2025-01-31T14:48:40.698+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:48:40.698+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/load.py
+[2025-01-31T14:48:40.703+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:48:40.700+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load.py", line 4, in <module>
+    with DAG('load_data', default_args=default_args, schedule_interval='@daily', catchup=True) as dag:
+                                       ^^^^^^^^^^^^
+NameError: name 'default_args' is not defined
+[2025-01-31T14:48:40.706+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/load.py
+[2025-01-31T14:48:40.721+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/load.py took 0.029 seconds
+[2025-01-31T14:49:11.538+0000] {processor.py:186} INFO - Started process (PID=2818) to work on /opt/airflow/dags/load.py
+[2025-01-31T14:49:11.539+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/load.py for tasks to queue
+[2025-01-31T14:49:11.541+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:49:11.540+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/load.py
+[2025-01-31T14:49:11.545+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:49:11.542+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load.py", line 4, in <module>
+    with DAG('load_data', default_args=default_args, schedule_interval='@daily', catchup=True) as dag:
+                                       ^^^^^^^^^^^^
+NameError: name 'default_args' is not defined
+[2025-01-31T14:49:11.548+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/load.py
+[2025-01-31T14:49:11.561+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/load.py took 0.027 seconds
+[2025-01-31T14:49:42.421+0000] {processor.py:186} INFO - Started process (PID=2884) to work on /opt/airflow/dags/load.py
+[2025-01-31T14:49:42.422+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/load.py for tasks to queue
+[2025-01-31T14:49:42.423+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:49:42.423+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/load.py
+[2025-01-31T14:49:42.428+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:49:42.425+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load.py", line 4, in <module>
+    with DAG('load_data', default_args=default_args, schedule_interval='@daily', catchup=True) as dag:
+                                       ^^^^^^^^^^^^
+NameError: name 'default_args' is not defined
+[2025-01-31T14:49:42.430+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/load.py
+[2025-01-31T14:49:42.445+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/load.py took 0.028 seconds
+[2025-01-31T14:50:13.004+0000] {processor.py:186} INFO - Started process (PID=2950) to work on /opt/airflow/dags/load.py
+[2025-01-31T14:50:13.005+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/load.py for tasks to queue
+[2025-01-31T14:50:13.006+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:50:13.006+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/load.py
+[2025-01-31T14:50:13.011+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:50:13.008+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load.py", line 4, in <module>
+    with DAG('load_data', default_args=default_args, schedule_interval='@daily', catchup=True) as dag:
+                                       ^^^^^^^^^^^^
+NameError: name 'default_args' is not defined
+[2025-01-31T14:50:13.014+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/load.py
+[2025-01-31T14:50:13.029+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/load.py took 0.030 seconds
+[2025-01-31T14:50:43.112+0000] {processor.py:186} INFO - Started process (PID=3016) to work on /opt/airflow/dags/load.py
+[2025-01-31T14:50:43.113+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/load.py for tasks to queue
+[2025-01-31T14:50:43.114+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:50:43.114+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/load.py
+[2025-01-31T14:50:43.120+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:50:43.116+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load.py", line 4, in <module>
+    with DAG('load_data', default_args=default_args, schedule_interval='@daily', catchup=True) as dag:
+                                       ^^^^^^^^^^^^
+NameError: name 'default_args' is not defined
+[2025-01-31T14:50:43.125+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/load.py
+[2025-01-31T14:50:43.143+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/load.py took 0.035 seconds
+[2025-01-31T14:51:13.641+0000] {processor.py:186} INFO - Started process (PID=3090) to work on /opt/airflow/dags/load.py
+[2025-01-31T14:51:13.642+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/load.py for tasks to queue
+[2025-01-31T14:51:13.643+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:51:13.643+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/load.py
+[2025-01-31T14:51:13.648+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:51:13.645+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load.py", line 4, in <module>
+    with DAG('load_data', default_args=default_args, schedule_interval='@daily', catchup=True) as dag:
+                                       ^^^^^^^^^^^^
+NameError: name 'default_args' is not defined
+[2025-01-31T14:51:13.651+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/load.py
+[2025-01-31T14:51:13.665+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/load.py took 0.028 seconds
+[2025-01-31T14:51:44.549+0000] {processor.py:186} INFO - Started process (PID=3156) to work on /opt/airflow/dags/load.py
+[2025-01-31T14:51:44.549+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/load.py for tasks to queue
+[2025-01-31T14:51:44.551+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:51:44.551+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/load.py
+[2025-01-31T14:51:44.555+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:51:44.552+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load.py", line 4, in <module>
+    with DAG('load_data', default_args=default_args, schedule_interval='@daily', catchup=True) as dag:
+                                       ^^^^^^^^^^^^
+NameError: name 'default_args' is not defined
+[2025-01-31T14:51:44.558+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/load.py
+[2025-01-31T14:51:44.572+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/load.py took 0.028 seconds
+[2025-01-31T14:52:15.349+0000] {processor.py:186} INFO - Started process (PID=3222) to work on /opt/airflow/dags/load.py
+[2025-01-31T14:52:15.350+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/load.py for tasks to queue
+[2025-01-31T14:52:15.351+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:52:15.351+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/load.py
+[2025-01-31T14:52:15.356+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:52:15.353+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load.py", line 4, in <module>
+    with DAG('load_data', default_args=default_args, schedule_interval='@daily', catchup=True) as dag:
+                                       ^^^^^^^^^^^^
+NameError: name 'default_args' is not defined
+[2025-01-31T14:52:15.358+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/load.py
+[2025-01-31T14:52:15.372+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/load.py took 0.027 seconds
+[2025-01-31T14:52:45.464+0000] {processor.py:186} INFO - Started process (PID=3287) to work on /opt/airflow/dags/load.py
+[2025-01-31T14:52:45.464+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/load.py for tasks to queue
+[2025-01-31T14:52:45.466+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:52:45.466+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/load.py
+[2025-01-31T14:52:45.471+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:52:45.468+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load.py", line 4, in <module>
+    with DAG('load_data', default_args=default_args, schedule_interval='@daily', catchup=True) as dag:
+                                       ^^^^^^^^^^^^
+NameError: name 'default_args' is not defined
+[2025-01-31T14:52:45.473+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/load.py
+[2025-01-31T14:52:45.487+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/load.py took 0.028 seconds
+[2025-01-31T14:53:15.580+0000] {processor.py:186} INFO - Started process (PID=3353) to work on /opt/airflow/dags/load.py
+[2025-01-31T14:53:15.581+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/load.py for tasks to queue
+[2025-01-31T14:53:15.582+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:53:15.582+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/load.py
+[2025-01-31T14:53:15.587+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:53:15.584+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load.py", line 4, in <module>
+    with DAG('load_data', default_args=default_args, schedule_interval='@daily', catchup=True) as dag:
+                                       ^^^^^^^^^^^^
+NameError: name 'default_args' is not defined
+[2025-01-31T14:53:15.590+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/load.py
+[2025-01-31T14:53:15.606+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/load.py took 0.030 seconds
+[2025-01-31T14:53:46.260+0000] {processor.py:186} INFO - Started process (PID=3419) to work on /opt/airflow/dags/load.py
+[2025-01-31T14:53:46.261+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/load.py for tasks to queue
+[2025-01-31T14:53:46.262+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:53:46.262+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/load.py
+[2025-01-31T14:53:46.267+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:53:46.264+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load.py", line 4, in <module>
+    with DAG('load_data', default_args=default_args, schedule_interval='@daily', catchup=True) as dag:
+                                       ^^^^^^^^^^^^
+NameError: name 'default_args' is not defined
+[2025-01-31T14:53:46.269+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/load.py
+[2025-01-31T14:53:46.284+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/load.py took 0.028 seconds
+[2025-01-31T14:54:16.973+0000] {processor.py:186} INFO - Started process (PID=3485) to work on /opt/airflow/dags/load.py
+[2025-01-31T14:54:16.973+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/load.py for tasks to queue
+[2025-01-31T14:54:16.975+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:54:16.975+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/load.py
+[2025-01-31T14:54:16.980+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:54:16.976+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load.py", line 4, in <module>
+    with DAG('load_data', default_args=default_args, schedule_interval='@daily', catchup=True) as dag:
+                                       ^^^^^^^^^^^^
+NameError: name 'default_args' is not defined
+[2025-01-31T14:54:16.982+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/load.py
+[2025-01-31T14:54:16.996+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/load.py took 0.028 seconds
+[2025-01-31T14:54:47.025+0000] {processor.py:186} INFO - Started process (PID=3551) to work on /opt/airflow/dags/load.py
+[2025-01-31T14:54:47.026+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/load.py for tasks to queue
+[2025-01-31T14:54:47.027+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:54:47.027+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/load.py
+[2025-01-31T14:54:47.032+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:54:47.029+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load.py", line 4, in <module>
+    with DAG('load_data', default_args=default_args, schedule_interval='@daily', catchup=True) as dag:
+                                       ^^^^^^^^^^^^
+NameError: name 'default_args' is not defined
+[2025-01-31T14:54:47.035+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/load.py
+[2025-01-31T14:54:47.049+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/load.py took 0.028 seconds
+[2025-01-31T14:55:17.195+0000] {processor.py:186} INFO - Started process (PID=3617) to work on /opt/airflow/dags/load.py
+[2025-01-31T14:55:17.195+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/load.py for tasks to queue
+[2025-01-31T14:55:17.197+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:55:17.197+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/load.py
+[2025-01-31T14:55:17.202+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:55:17.199+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load.py", line 4, in <module>
+    with DAG('load_data', default_args=default_args, schedule_interval='@daily', catchup=True) as dag:
+                                       ^^^^^^^^^^^^
+NameError: name 'default_args' is not defined
+[2025-01-31T14:55:17.204+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/load.py
+[2025-01-31T14:55:17.218+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/load.py took 0.028 seconds
+[2025-01-31T14:55:47.245+0000] {processor.py:186} INFO - Started process (PID=3683) to work on /opt/airflow/dags/load.py
+[2025-01-31T14:55:47.245+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/load.py for tasks to queue
+[2025-01-31T14:55:47.247+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:55:47.246+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/load.py
+[2025-01-31T14:55:47.251+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:55:47.248+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load.py", line 4, in <module>
+    with DAG('load_data', default_args=default_args, schedule_interval='@daily', catchup=True) as dag:
+                                       ^^^^^^^^^^^^
+NameError: name 'default_args' is not defined
+[2025-01-31T14:55:47.254+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/load.py
+[2025-01-31T14:55:47.268+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/load.py took 0.028 seconds
+[2025-01-31T14:56:17.394+0000] {processor.py:186} INFO - Started process (PID=3750) to work on /opt/airflow/dags/load.py
+[2025-01-31T14:56:17.394+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/load.py for tasks to queue
+[2025-01-31T14:56:17.396+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:56:17.396+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/load.py
+[2025-01-31T14:56:17.401+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:56:17.397+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load.py", line 4, in <module>
+    with DAG('load_data', default_args=default_args, schedule_interval='@daily', catchup=True) as dag:
+                                       ^^^^^^^^^^^^
+NameError: name 'default_args' is not defined
+[2025-01-31T14:56:17.403+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/load.py
+[2025-01-31T14:56:17.417+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/load.py took 0.028 seconds
+[2025-01-31T14:56:47.706+0000] {processor.py:186} INFO - Started process (PID=3814) to work on /opt/airflow/dags/load.py
+[2025-01-31T14:56:47.707+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/load.py for tasks to queue
+[2025-01-31T14:56:47.708+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:56:47.708+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/load.py
+[2025-01-31T14:56:47.713+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:56:47.710+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load.py", line 4, in <module>
+    with DAG('load_data', default_args=default_args, schedule_interval='@daily', catchup=True) as dag:
+                                       ^^^^^^^^^^^^
+NameError: name 'default_args' is not defined
+[2025-01-31T14:56:47.716+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/load.py
+[2025-01-31T14:56:47.733+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/load.py took 0.031 seconds
+[2025-01-31T14:57:18.387+0000] {processor.py:186} INFO - Started process (PID=3884) to work on /opt/airflow/dags/load.py
+[2025-01-31T14:57:18.387+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/load.py for tasks to queue
+[2025-01-31T14:57:18.389+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:57:18.389+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/load.py
+[2025-01-31T14:57:18.394+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:57:18.390+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load.py", line 4, in <module>
+    with DAG('load_data', default_args=default_args, schedule_interval='@daily', catchup=True) as dag:
+                                       ^^^^^^^^^^^^
+NameError: name 'default_args' is not defined
+[2025-01-31T14:57:18.397+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/load.py
+[2025-01-31T14:57:18.413+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/load.py took 0.031 seconds
+[2025-01-31T14:57:49.056+0000] {processor.py:186} INFO - Started process (PID=3950) to work on /opt/airflow/dags/load.py
+[2025-01-31T14:57:49.056+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/load.py for tasks to queue
+[2025-01-31T14:57:49.058+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:57:49.058+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/load.py
+[2025-01-31T14:57:49.065+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:57:49.060+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load.py", line 4, in <module>
+    with DAG('load_data', default_args=default_args, schedule_interval='@daily', catchup=True) as dag:
+                                       ^^^^^^^^^^^^
+NameError: name 'default_args' is not defined
+[2025-01-31T14:57:49.068+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/load.py
+[2025-01-31T14:57:49.084+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/load.py took 0.034 seconds
+[2025-01-31T14:58:19.801+0000] {processor.py:186} INFO - Started process (PID=4016) to work on /opt/airflow/dags/load.py
+[2025-01-31T14:58:19.802+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/load.py for tasks to queue
+[2025-01-31T14:58:19.804+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:58:19.803+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/load.py
+[2025-01-31T14:58:19.809+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:58:19.805+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load.py", line 4, in <module>
+    with DAG('load_data', default_args=default_args, schedule_interval='@daily', catchup=True) as dag:
+                                       ^^^^^^^^^^^^
+NameError: name 'default_args' is not defined
+[2025-01-31T14:58:19.812+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/load.py
+[2025-01-31T14:58:19.828+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/load.py took 0.031 seconds
+[2025-01-31T14:58:50.608+0000] {processor.py:186} INFO - Started process (PID=4082) to work on /opt/airflow/dags/load.py
+[2025-01-31T14:58:50.608+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/load.py for tasks to queue
+[2025-01-31T14:58:50.610+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:58:50.610+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/load.py
+[2025-01-31T14:58:50.615+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:58:50.612+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load.py", line 4, in <module>
+    with DAG('load_data', default_args=default_args, schedule_interval='@daily', catchup=True) as dag:
+                                       ^^^^^^^^^^^^
+NameError: name 'default_args' is not defined
+[2025-01-31T14:58:50.618+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/load.py
+[2025-01-31T14:58:50.634+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/load.py took 0.031 seconds
+[2025-01-31T14:59:21.519+0000] {processor.py:186} INFO - Started process (PID=4148) to work on /opt/airflow/dags/load.py
+[2025-01-31T14:59:21.520+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/load.py for tasks to queue
+[2025-01-31T14:59:21.522+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:59:21.521+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/load.py
+[2025-01-31T14:59:21.527+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:59:21.523+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load.py", line 4, in <module>
+    with DAG('load_data', default_args=default_args, schedule_interval='@daily', catchup=True) as dag:
+                                       ^^^^^^^^^^^^
+NameError: name 'default_args' is not defined
+[2025-01-31T14:59:21.529+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/load.py
+[2025-01-31T14:59:21.545+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/load.py took 0.030 seconds
+[2025-01-31T14:59:52.268+0000] {processor.py:186} INFO - Started process (PID=4214) to work on /opt/airflow/dags/load.py
+[2025-01-31T14:59:52.269+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/load.py for tasks to queue
+[2025-01-31T14:59:52.270+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:59:52.270+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/load.py
+[2025-01-31T14:59:52.275+0000] {logging_mixin.py:190} INFO - [2025-01-31T14:59:52.272+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load.py", line 4, in <module>
+    with DAG('load_data', default_args=default_args, schedule_interval='@daily', catchup=True) as dag:
+                                       ^^^^^^^^^^^^
+NameError: name 'default_args' is not defined
+[2025-01-31T14:59:52.278+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/load.py
+[2025-01-31T14:59:52.295+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/load.py took 0.031 seconds
+[2025-01-31T15:00:22.361+0000] {processor.py:186} INFO - Started process (PID=4279) to work on /opt/airflow/dags/load.py
+[2025-01-31T15:00:22.362+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/load.py for tasks to queue
+[2025-01-31T15:00:22.363+0000] {logging_mixin.py:190} INFO - [2025-01-31T15:00:22.363+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/load.py
+[2025-01-31T15:00:22.368+0000] {logging_mixin.py:190} INFO - [2025-01-31T15:00:22.365+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load.py", line 4, in <module>
+    with DAG('load_data', default_args=default_args, schedule_interval='@daily', catchup=True) as dag:
+                                       ^^^^^^^^^^^^
+NameError: name 'default_args' is not defined
+[2025-01-31T15:00:22.371+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/load.py
+[2025-01-31T15:00:22.385+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/load.py took 0.028 seconds
+[2025-01-31T15:00:53.205+0000] {processor.py:186} INFO - Started process (PID=4336) to work on /opt/airflow/dags/load.py
+[2025-01-31T15:00:53.206+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/load.py for tasks to queue
+[2025-01-31T15:00:53.207+0000] {logging_mixin.py:190} INFO - [2025-01-31T15:00:53.207+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/load.py
+[2025-01-31T15:00:53.216+0000] {logging_mixin.py:190} INFO - [2025-01-31T15:00:53.209+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load.py", line 4, in <module>
+    with DAG('load_data', default_args=default_args, schedule_interval='@daily', catchup=True) as dag:
+                                       ^^^^^^^^^^^^
+NameError: name 'default_args' is not defined
+[2025-01-31T15:00:53.221+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/load.py
+[2025-01-31T15:00:53.240+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/load.py took 0.040 seconds
+[2025-01-31T15:01:23.987+0000] {processor.py:186} INFO - Started process (PID=4400) to work on /opt/airflow/dags/load.py
+[2025-01-31T15:01:23.988+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/load.py for tasks to queue
+[2025-01-31T15:01:23.990+0000] {logging_mixin.py:190} INFO - [2025-01-31T15:01:23.990+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/load.py
+[2025-01-31T15:01:23.995+0000] {logging_mixin.py:190} INFO - [2025-01-31T15:01:23.991+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load.py", line 4, in <module>
+    with DAG('load_data', default_args=default_args, schedule_interval='@daily', catchup=True) as dag:
+                                       ^^^^^^^^^^^^
+NameError: name 'default_args' is not defined
+[2025-01-31T15:01:23.997+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/load.py
+[2025-01-31T15:01:24.013+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/load.py took 0.030 seconds

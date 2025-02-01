@@ -1,0 +1,12 @@
+FROM openjdk:11-jre-slim
+
+# Instalar dependências
+RUN apt-get update && apt-get install -y curl
+
+# Baixar e configurar o Embulk
+RUN curl -LO https://github.com/embulk/embulk/releases/download/v0.10.34/embulk-0.10.34.jar
+RUN mv embulk-0.10.34.jar /usr/local/bin/embulk
+RUN chmod +x /usr/local/bin/embulk
+
+# Ponto de entrada do container
+ENTRYPOINT ["embulk"]

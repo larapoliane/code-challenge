@@ -1,0 +1,12 @@
+in:
+  type: file
+  path_prefix: "/workspaces/code-challenge/data/order_details.csv"
+  file_ext: csv
+  parser:
+    type: csv
+out:
+  type: file
+  path_prefix: "/workspaces/code-challenge/desafio_pipeline/data{{ ds }}"
+  file_ext: csv
+  formatter:
+    type: csv

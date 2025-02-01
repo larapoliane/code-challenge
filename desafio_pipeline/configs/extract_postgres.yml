@@ -1,0 +1,27 @@
+in:
+  type: postgresql
+  host: localhost
+  user: northwind_user
+  password: thewindisblowing
+  database: northwind
+  select: "SELECT table_name FROM information_schema.tables WHERE table_schema='public'"
+
+exec: |
+  for table in $(psql -t -c "SELECT table_name FROM information_schema.tables WHERE table_schema='public';"); do
+    embulk run <<EOF
+    in:
+      type: postgresql
+      host: localhost
+      user: northwind_user
+      password: thewindisblowing
+      database: northwind
+      query: "SELECT * FROM $table"
+    out:
+      type: file
+      path_prefix: "/workspaces/code-challenge/desafio_pipeline/data{{ ds }}"
+      file_ext: csv
+      formatter:
+        type: csv
+    EOF
+  done
+

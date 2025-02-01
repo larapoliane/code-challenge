@@ -1,0 +1,88 @@
+version: '3'
+services:
+  db:
+    image: postgres:12
+    env_file: .env
+    volumes:
+      - ./dbdata:/var/lib/postgresql/data
+      - ./data/northwind.sql:/docker-entrypoint-initdb.d/northwind.sql
+    ports:
+      - 5432:5432
+
+  redis:
+    image: redis:7.2-bookworm  # Usa a versão 7.2 do Redis
+    expose:
+      - 6379  # Expõe a porta 6379 para comunicação entre os serviços internos
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]  # Verifica se o Redis está respondendo
+      interval: 10s
+      timeout: 30s
+      retries: 50
+      start_period: 30s
+    restart: always  # Reinicia automaticamente em caso de falha
+
+  postgres:
+    image: postgres:13  # Usa a versão 13 do PostgreSQL
+    environment:
+      POSTGRES_USER: airflow  # Define o usuário do banco de dados
+      POSTGRES_PASSWORD: airflow  # Define a senha do banco de dados
+      POSTGRES_DB: airflow  # Define o nome do banco de dados
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U airflow"]  # Verifica se o banco está pronto
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - postgres_data:/var/lib/postgresql/data  # Persistência dos dados do PostgreSQL
+    restart: always  # Reinicia automaticamente se houver falha
+
+  airflow-init:
+    image: apache/airflow:2.10.4  # Usa a versão 2.10.4 do Airflow
+    entrypoint: ["/bin/bash", "-c", "airflow db init"]  # Inicializa o banco de dados do Airflow
+    environment:
+      AIRFLOW__CORE__EXECUTOR: CeleryExecutor  # Define o executor Celery
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow  # Conexão com o PostgreSQL
+    depends_on:
+      postgres:
+        condition: service_healthy  # Aguarda o PostgreSQL estar pronto antes de executar
+    restart: no  # Não reinicia automaticamente após a execução
+
+  airflow-webserver:
+    image: apache/airflow:2.10.4  # Usa a versão 2.10.4 do Airflow
+    command: webserver  # Inicia o servidor web do Airflow
+    environment:
+      AIRFLOW__CORE__EXECUTOR: CeleryExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+    ports:
+      - "8080:8080"  # Mapeia a porta 8080 do contêiner para a máquina local
+    depends_on:
+      postgres:
+        condition: service_healthy  # Aguarda o PostgreSQL estar pronto
+      airflow-init:
+        condition: service_completed_successfully  # Aguarda a inicialização do Airflow
+    restart: always  # Reinicia automaticamente se houver falha
+
+  airflow-scheduler:
+    image: apache/airflow:2.10.4  # Usa a versão 2.10.4 do Airflow
+    command: scheduler  # Inicia o agendador de tarefas do Airflow
+    environment:
+      AIRFLOW__CORE__EXECUTOR: CeleryExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+    depends_on:
+      postgres:
+        condition: service_healthy  # Aguarda o PostgreSQL estar pronto
+      airflow-init:
+        condition: service_completed_successfully  # Aguarda a inicialização do Airflow
+    restart: always  # Reinicia automaticamente se houver falha
+
+  embulk:
+    image: ghcr.io/embulk/embulk
+    container_name: embulk-container
+    volumes:
+      - ./configs:/embulk/configs  # Monta o diretório de configurações do Embulk
+      - ./data:/embulk/data  # Monta o diretório de dados do Embulk
+    command: embulk --version  # Apenas para testar a execução do Embulk
+    restart: always  # Reinicia automaticamente se houver falha
+
+volumes:
+  postgres_data:  # Volume para persistência dos dados do PostgreSQL

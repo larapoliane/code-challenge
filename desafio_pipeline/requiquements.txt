@@ -1,0 +1,6 @@
+psycopg2
+python-dotenv
+psycopg2
+apache-airflow==2.7.1  
+embulk==0.9.23  
+pandas==2.1.1  

@@ -1,0 +1,14 @@
+in:
+  type: file
+  path_prefix: "/data/csv/{{ ds }}"
+  file_ext: csv
+  parser:
+    type: csv
+out:
+  type: postgresql
+  host: localhost
+  user: postgres
+  password: postgres
+  database: final_db
+  table: order_details
+  mode: insert

@@ -1,0 +1,14 @@
+in:
+  type: file
+  path_prefix: "/workspaces/code-challenge/desafio_pipeline/data{{ ds }}"
+  file_ext: csv
+  parser:
+    type: csv
+out:
+  type: postgresql
+  host: localhost
+  user: postgres
+  password: postgres
+  database: final_db
+  table: orders
+  mode: insert
