@@ -1,0 +1,14 @@
+📌 Configuração do Projeto no Codespaces
+📂 seu_projeto/
+┣ 📂 configs/ → Arquivos de configuração do Embulk
+┃ ┣ 📝 extract_postgres.yml → Extrai todas as tabelas
+┃ ┣ 📝 extract_csv.yml → Extrai o CSV
+┃ ┣ 📝 load_postgres.yml → Carrega as tabelas no PostgreSQL final
+┃ ┗ 📝 load_csv.yml → Carrega o CSV no PostgreSQL final
+┣ 📂 dags/ → DAGs do Airflow
+┃ ┣ 📝 extract.py → DAG para extração
+┃ ┣ 📝 load.py → DAG para carga
+┃ ┗ 📝 report.py → DAG para relatório
+┣ 📂 data/ → Diretório onde os arquivos extraídos serão armazenados
+┣ 📝 docker-compose.yaml → Configuração do Airflow
+┗ 📝 README.md → Instruções de uso
